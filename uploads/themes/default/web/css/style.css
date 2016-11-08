@@ -1,0 +1,876 @@
+body,
+html {
+	font-family: tahoma, arial, sans serif !important;
+	height: 100%;
+}
+
+
+/*Фиксирование модульного окна*/
+
+body.modal-open {
+	overflow: auto;
+	padding-right: 0px !important;
+}
+
+
+/*Высота шапки сайта для больших мониторов*/
+
+@media screen and (min-width: 960px) {
+	.header-site {}
+	.navbar-static-top {}
+}
+
+/*стили для мобильной версии*/
+
+@media screen and (max-width: 760px) {
+	.card-product-block {
+		margin-top: 15px;
+		box-shadow: 0 0 10px #146c94;
+		border-radius: 10px;
+		padding: 3px;
+	}
+	.button-mobile {
+		width: 100% !important;
+		min-height: 50px !important;
+		font-weight: bold !important;
+		font-size: 2em !important;
+		margin-top: 10px !important;
+	}
+	.button-mobile img {
+		display: none !important;
+	}
+	.iteam-menu-list {
+		display: inline-block !important;
+		margin: 0px auto;
+	}
+	.block-specifications-categoty h2 {
+		font-size: 20px !important;
+	}
+	.model-category li {
+		text-align: center;
+		display: block !important;
+	}
+	.model-category a {
+		font-size: 2em;
+	}
+	.mobile-description-category {
+		clear: left !important;
+	}
+	.modal-dialog-product {
+		margin-top: 40px !important;
+		margin-left: 20px !important;
+		margin-right: 20px !important;
+		margin-bottom: 60px !important;
+		z-index: !important;
+	}
+	.iteam-menu-list li a {
+		font-size: 20px !important;
+	}
+	.decoration-block-store {
+		display: none;
+	}
+	.info-block-store {
+		height: auto !important;
+	}
+	.mobile-info-block-store {
+		clear: left;
+	}
+	.order-block {
+		width: 100%;
+		max-width: 700px !important;
+		height: auto;
+		background-color: #E4F6F8;
+		border-radius: 5px !important;
+		box-shadow: 3px 3px 5px gray;
+		padding: 0px !important;
+	}
+	.order-group {
+		border-radius: 10px;
+		border: none !important;
+		padding: 10px !important;
+		text-align: center !important;
+	}
+	.message-order {
+		resize: none;
+		height: 100px !important;
+		width: 100%;
+		max-width: 700px !important;
+	}
+	.order-button {
+		float: none !important;
+		margin: 5px 5px 5px 5px !important;
+		width: 90% !important;
+		height: 60px !important;
+	}
+}
+
+
+/*стили для планшетов*/
+
+@media screen and (max-width: 992px) {
+	.card-product-block {
+		border-radius: 10px;
+		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.card-product-block {
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+}
+
+
+/*для больших мониторов*/
+
+@media screen and (min-width: 1800px) {
+	.fullhd {
+		width: 16%;
+		transition-property: all;
+		transition-duration: .4s;
+		transition-timing-function: ease-in-out;
+	}
+}
+
+
+/*Разделение на 2 колонки в каиегориях*/
+
+@media screen and (max-width:1280px) and (min-width:1201px) {
+	.card-product-block {
+		width: 50%;
+	}
+}
+
+
+/* Стили для распечатки страницы */
+
+@media print {
+	.img-protuct {
+		float: left;
+		max-width: 200px;
+	}
+	.button-block {
+		display: none;
+	}
+	.breadcrumb {
+		display: none;
+	}
+	.print-info {
+		display: block !important;
+	}
+}
+/* Анимация */
+.fullhd {
+	transition-property: all;
+	transition-duration: .4s;
+	transition-timing-function: ease-in-out;
+}
+/* Карточка продукта для вывода в категориях*/
+
+.card-product-block {
+	margin-bottom: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom: 2px solid #e9e9e9;
+	margin-bottom: 0px;
+	border-right: 1px solid #e9e9e9;
+	cursor: pointer;
+}
+/* Блок для картинки в категориях товара*/
+
+.category-images-block {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+/* Заголовок карточки в категориях*/
+
+.active-name a:hover {
+	color: red !important;
+}
+
+.block-specifications-categoty h2 {
+	margin-bottom: 5px;
+}
+
+.active-name a {
+	color: #366b81;
+	font-size: 14px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+/* Заголовок карточки в рекомендованных товарах*/
+
+.link-product-name a {
+	color: #366b81;
+	font-size: 14px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.link-product-name a:hover {
+	color: red !important;
+}
+
+
+/* Добавляет тень при наведении*/
+
+.card-product-block:hover {
+	box-shadow: 0 0 10px #8dd0ff;
+	border-bottom: 2px solid #8dd0ff;
+	border-right: 1px solid #8dd0ff;
+}
+
+
+/* меню*/
+
+.iteam-menu-list {
+	margin: auto;
+}
+
+.left-sidebar,
+.content {
+	height: auto;
+	border: 2px solid black;
+}
+
+.left-sidebr {
+	max-width: 200px;
+}
+
+.contact-block {
+	background-color: #f9eadf;
+}
+
+.content {
+	border-left: 1px solid #fff;
+}
+
+.head-name {
+	padding: auto;
+}
+
+
+/* Технические характеристики*/
+
+.block-specifications {
+	text-align: left;
+}
+
+.table-price-message {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	border-collapse: collapse;
+}
+
+.table-price-message th {
+	padding: 5px;
+	border: 1px solid gray;
+	background-color: #146c94;
+	color: white;
+}
+.table-price-message td {
+	padding: 5px;
+	border: 1px solid #c1c1c1;
+}
+
+.table-price-message tr:nth-child(odd) {
+	background-color: #f3e0d1;
+	color: black;
+}
+
+.table-price-message tr:nth-child(even) {
+	background-color: white;
+	color: black;
+}
+
+
+/* Таблица для вывода технических данных*/
+
+.table-specifications {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	border-collapse: collapse;
+}
+
+.table-specifications h2 {
+	font-size: 15px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.table-specifications th {
+	padding: 3px border: 1px solid gray;
+	background-color: #146c94;
+	color: white;
+}
+
+.table-specifications td {
+	border: 1px solid #c1c1c1;
+	padding: 5px;
+}
+
+.table-specifications tr:nth-child(odd) {
+	background-color: #f3e0d1;
+	color: black;
+}
+
+.table-specifications tr:nth-child(even) {
+	background-color: white;
+	color: black;
+}
+
+
+/* Таблица для вывода технических характеристик в категориях*/
+
+.table-specifications-categoty {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	border-collapse: collapse;
+	font-size: 18px;
+}
+
+.table-specifications-categoty th {
+	border: 1px solid gray;
+	background-color: #146c94;
+	color: white;
+}
+
+.table-specifications-categoty td {
+	border: 1px solid #c1c1c1;
+	font-size: 13px;
+	padding: 5px;
+}
+
+.table-specifications-categoty tr:nth-child(1) {
+	font-weight: bold;
+}
+
+.table-specifications-categoty tr:nth-child(odd) {
+	background-color: white;
+	color: black;
+}
+
+.table-specifications-categoty tr:nth-child(even) {
+	background-color: #f3e0d1;
+	color: black;
+}
+
+
+/* Цена в таблице*/
+
+.price-table {
+	border: 2px solid black;
+	font-weight: bold;
+}
+
+.navbar-static-top {
+	height: auto;
+	border-bottom: 2px solid #8f6d40;
+}
+
+.menu-tdtali {
+	background-color: rgb(212, 182, 146);
+}
+
+.iteam-menu-list li {
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+	padding: 2px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+
+.iteam-menu-list li a {
+	color: white !important;
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: 600;
+	display: block;
+	float: left;
+}
+
+.iteam-menu-list li a:hover {
+	text-decoration: none;
+}
+
+#responsive-menu {
+	text-align: right;
+	background-color: rgb(212, 182, 146);
+}
+
+
+/* Логотип в шапке*/
+
+.block-logo-name-company {
+	float: left;
+	width: 220px;
+	height: 110px;
+	text-align: center;
+}
+
+
+/* Карточка продукта в категориях*/
+
+.category-product-cart {
+	height: auto;
+	width: 240;
+	margin-bottom: 30px;
+}
+
+
+/*Блок для вывода таблицы с тех. данными */
+
+.block-specifications-categoty {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+/* блок для картинки в карточке товара в категориях*/
+
+.category-images {
+	text-align: center;
+	padding-right: 5px;
+	padding-top: 30px;
+	padding-left: 15px;
+}
+
+.category-images img {
+	max-width: 120px;
+	max-height: 140px;
+	width: 100%;
+}
+
+
+/* картинка в карточке товара в категориях*/
+
+.category-images-img {
+	width: 100% !important;
+	max-width: 120px !important;
+}
+
+
+/* Блок с описанием товар*/
+
+#block-description {}
+
+.description-block {
+	margin-left: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 218px;
+	white-space: normal;
+	transition-property: all;
+	transition-delay: .2s;
+	transition-timing-function: ease-in-out;
+}
+
+
+/* Раскрыть блок с информацией о товаре*/
+
+.description-block-full {
+	height: auto!important;
+}
+
+
+/* картинка логотип*/
+
+.block-logo-name-company img {
+	padding-top: 5px;
+}
+
+
+/* блок для каринки товара*/
+
+.img-protuct {
+	padding-top: 30px;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+}
+
+
+/* Блок для кнопок*/
+
+.button-block {
+	padding-top: 20px;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+}
+
+.block-logo-name-company span {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+/* Блок  в шапке с телефоном*/
+
+.block-free-phone {
+	height: 140px;
+	float: right;
+	width: 280px;
+	text-align: right;
+	padding: 20px;
+	background: #3dafc7;
+	background: linear-gradient(to top, #3dafc7 0%, #317e9a 60%, #2f7a97 70%);
+	margin: auto;
+}
+
+.free-number {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.info-russia-number {
+	color: white;
+}
+
+.block-mobile-info {
+	float: left;
+	color: white !important;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.mobile-header {
+	background: linear-gradient(to top, #3dafc7 0%, #317e9a 60%, #2f7a97 70%);
+}
+
+.mobile-russia-number {
+	padding: 10px;
+	background: linear-gradient(to top, #eee 0%, #fff 80%);
+}
+
+.mobile-russia-number span:nth-child(1) {
+	font-weight: bold;
+}
+
+.mobile-russia-number span:nth-child(2) {
+	float: right;
+	font-weight: bold;
+}
+
+.logo-skype {
+	max-width: 20px;
+}
+
+.mobile-russia-number span:nth-child(6) {
+	font-weight: bold
+}
+
+.mobile-russia-number span:nth-child(7) {
+	float: right;
+	font-weight: bold
+}
+
+
+/*Блок для читать далеее*/
+
+.next-read {
+	float: right;
+	padding: 2px;
+}
+
+
+/*Чиать далее */
+
+.next-read a {
+	color: black !important;
+	font-weight: !important;
+}
+
+
+/* Блок с контактными данными для печатной версии*/
+
+.print-info {
+	display: none;
+	border: 2px solid black;
+}
+
+
+/*галерея*/
+
+.galery-img {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	margin: 10px;
+}
+
+
+/*оформление кнопок*/
+
+.button-style {
+	background: #468EB7;
+	padding: 2px 2px;
+	font-family: Calibri;
+	width: 180px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFFFFF;
+	text-align: center;
+	word-wrap: normal;
+	border: solid 1px #73C8F0;
+	cursor: pointer;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: -moz-linear-gradient(0% 100% 90deg, #9BCAE6, #468EB7);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#468EB7), to(#9BCAE6));
+	box-shadow: inset 0 1px 0 0 #FFFFFF;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.button-style:hover {
+	background: #2E69E3;
+	background: -moz-linear-gradient(0% 100% 90deg, #10597c, #59c2ff);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#59c2ff), to(#10597c));
+}
+
+.button-style:active {
+	background: #2E69E3;
+	background: -moz-linear-gradient(0% 100% 90deg, #10597c, #59c2ff);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#59c2ff), to(#10597c));
+	box-shadow: inset 1px 1px 0 0 #004A7F;
+	-moz-box-shadow: inset 1px 1px 0 0 #004A7F;
+	-webkit-box-shadow: inset 1px 1px 0 0 #004A7F;
+}
+
+.button-style img {
+	display: inline;
+	word-wrap: normal;
+	vertical-align: middle;
+	float: right;
+}
+
+
+/* Вывод списка моделей в электрических и редукторе*/
+
+.model-category li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+
+/*Блок с ценой в категориях */
+
+.price-block-category {
+	border: 2px solid black;
+	font-weight: bold;
+	text-align: right;
+	border-radius: 5px;
+}
+
+.price-block-category span {
+	float: left !important;
+}
+
+
+/*Блок для изображения увелечения */
+
+.zoom-div {
+	float: right;
+	position: relative;
+	bottom: 50px;
+}
+
+.modal-form-custom {
+	background-color: #E4F6F8;
+	height: 500px;
+}
+
+.modal-dialog-product {
+	margin-top: 170px;
+}
+
+
+/*Форма заявки для мобильной версии */
+
+#mobile-form-ticket {
+	display: none;
+	width: 100%;
+}
+
+.mobile-form-ticket {
+	display: none;
+	width: 100%;
+}
+
+.mobile-form-ticket-full {
+	display: block !important;
+}
+
+.number-sidebar {
+	font-family: arial;
+	background-color: #f9eadf;
+	border: 2px solid #d4d4d2;
+	margin-top: 25px;
+	padding-left: 20px;
+}
+
+
+/*Ссылки в sidebar*/
+
+.activelink {
+	color: black !important;
+	text-decoration: none !important;
+	font-size: 16px !important;
+}
+
+.activelink a:hover {
+	color: black !important;
+	text-decoration: none !important;
+}
+
+
+/*Вывод элементов в каталоге товаров*/
+
+.decoration-block-store {
+	float: left;
+	width: 40px;
+	height: 116px;
+	background-color: #DFC1A5;
+}
+
+.info-block-store {
+	background-color: #F3E0D1;
+	height: 120px;
+	outline: 5px solid white;
+	padding: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 13px;
+}
+
+.info-block-store a {
+	color: #366B81;
+	font-size: 13px;
+	font-family: Arial;
+	line-height: 17px;
+	text-decoration: underline;
+}
+
+.info-block-store img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+
+/*Постоянные ссылки в sidebar*/
+
+.link-sidebar {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.link-sidebar a {
+	color: white;
+	font-size: 18px;
+	display: block;
+	margin-top: 20px;
+	text-decoration: underline;
+}
+
+.link-sidebar a:hover {
+	text-decoration: none;
+}
+
+
+/*Новостной блок в sidebar*/
+
+.news-sidebar {
+	margin-top: 20px;
+}
+
+.news-sidebar span {
+	margin-left: 20px
+}
+
+.news-sidebar a {
+	color: white;
+}
+
+
+/*оформлениие таблицы на главной странице*/
+
+.table-info td {
+	padding: 2px 2px;
+}
+
+.table-info a {
+	color: #366B81;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.table-info a:hover {
+	color: #FE2313;
+}
+
+
+/*Заголовок в страницах*/
+
+.pagetitle {
+	font-size: 18px !important;
+}
+
+
+/*Форма обратной связи*/
+
+.order-block {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	background-color: #E4F6F8;
+	border-radius: 15px;
+	box-shadow: 3px 3px 5px gray;
+	padding: 30px;
+}
+
+.order-group {
+	border-radius: 10px;
+	border: 3px solid black;
+	padding: 50px;
+}
+
+.message-order {
+	resize: none;
+	height: 100px !important;
+	width: 100%;
+	max-width: 500px;
+}
+
+.order-button {
+	float: right;
+	margin: 10px 0px 10px 10px;
+}
+
+
+/*Блок отправки быстрой заявки в мобильной версии*/
+
+.block-order {
+	border: 2px solid #5cb85c;
+	margin-top: 20px;
+	border-radius: 15px;
+	padding: 15px;
+}
